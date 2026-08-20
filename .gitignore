@@ -1,0 +1,8 @@
+# OS noise
+.DS_Store
+
+# Secrets — a committed key is a compromised key.
+# Real values live in .env (local only); committed .env.example documents the shape.
+.env
+.env.*
+!.env.example
