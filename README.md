@@ -1,11 +1,14 @@
-# Project 2 (name TBD)
+# Encore (working name)
+
+Your Spotify listening history as a timeline: log in with Spotify, Encore snapshots
+your top artists and tracks every week, and you watch your taste change over time.
 
 Second AI-assisted build, successor to Mirror. This one ships what Mirror deferred:
 **deployed**, with a **database**, **user accounts**, and a load-bearing **external API**.
 
-## Status: consultation phase (started 2026-08-20)
+## Status: scoping — Phase 2 (idea locked 2026-08-23)
 
-The app idea is being selected; architecture and scaffold follow.
+Scope draft under review; system design and scaffold follow.
 
 Locked so far:
 
