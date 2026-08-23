@@ -6,9 +6,10 @@ your top artists and tracks every week, and you watch your taste change over tim
 Second AI-assisted build, successor to Mirror. This one ships what Mirror deferred:
 **deployed**, with a **database**, **user accounts**, and a load-bearing **external API**.
 
-## Status: scoping — Phase 2 (idea locked 2026-08-23)
+## Status: design — Phase 3 (scope approved 2026-08-23)
 
-Scope draft under review; system design and scaffold follow.
+Scope and milestones: [docs/development-plan.md](docs/development-plan.md).
+System design under review; scaffold next.
 
 Locked so far:
 
