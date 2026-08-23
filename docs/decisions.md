@@ -7,6 +7,19 @@ Format: **Date — Decision.** Options considered · why · what I learned.
 
 ---
 
+**2026-08-23 — Phase 4 stack approved.**
+Reuse Mirror's frameworks (React + TS + Vite + Tailwind; FastAPI + Python) — the
+40-hour novelty budget goes to database, auth, and deployment, not new syntax ·
+Postgres on Neon free tier (Render's free database self-deletes after 30 days —
+trap avoided) · SQLAlchemy + Alembic, and we read the SQL it emits · OAuth
+hand-rolled with httpx (the flow is the lesson); sessions = our own table + an
+httpOnly cookie · one Render free service serves both API and built frontend
+(same origin → cookies just work, zero CORS; dev uses a Vite proxy — the opposite
+of Mirror's CORS choice, deliberately: that lesson is banked, and cross-site
+cookies are a tar pit) · GitHub Actions for the weekly cron and CI · repo public
+(portfolio + free CI minutes). Accepted quirk: the free service sleeps after ~15
+idle minutes (~30–60s wake).
+
 **2026-08-23 — Phase 3 design approved.**
 Database-backed cookie sessions over JWT (a row is easy to understand and easy to
 revoke — delete row = logged out; JWT is a reading topic) · Spotify keys in their
