@@ -1,0 +1,4 @@
+# Dev-only tools (not installed in production).
+pytest==9.1.1
+ruff==0.16.4
+mypy==2.3.1
