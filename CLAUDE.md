@@ -15,6 +15,8 @@ artists/tracks, watch your taste change. Phase: v1 build (live by Oct 15, 2026).
 - Keep explanations simple: plain words, short sentences, define terms on first use.
 - Branch per step → PR → Luan reviews and merges. Conventional Commits. Docs ride
   the same commit as the change.
+- After every commit: Claude gives a short architecture-level walkthrough (what
+  was added, why, how it connects) before moving on.
 - Check in before architectural decisions; push back on out-of-scope asks (the
   not-building list lives in development-plan.md).
 
