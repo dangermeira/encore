@@ -1,0 +1,11 @@
+# Encore backend dependencies. Rebuild the sandbox with:
+#   python3 -m venv .venv
+#   .venv/bin/pip install -r requirements.txt -r requirements-dev.txt
+fastapi==0.141.1
+uvicorn[standard]==0.52.4
+httpx==0.28.1            # outbound HTTP client for Spotify calls (also used by TestClient)
+pydantic==2.13.4
+pydantic-settings==2.15.0
+sqlalchemy==2.0.52
+alembic==1.19.1          # database migrations
+psycopg[binary]==3.3.4   # Postgres driver

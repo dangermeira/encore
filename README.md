@@ -6,13 +6,30 @@ your top artists and tracks every week, and you watch your taste change over tim
 Second AI-assisted build, successor to Mirror. This one ships what Mirror deferred:
 **deployed**, with a **database**, **user accounts**, and a load-bearing **external API**.
 
-## Status: scaffold — Phase 5 (stack approved 2026-08-23)
+## Status: building v1 (scaffold landed 2026-08-23)
 
 - Scope and milestones: [docs/development-plan.md](docs/development-plan.md)
 - Architecture: [docs/architecture.md](docs/architecture.md)
 - Decisions log: [docs/decisions.md](docs/decisions.md)
+- How we build: [docs/ways-of-working.md](docs/ways-of-working.md)
 
-Stack approved (see decisions log). Next: scaffold, then the walking skeleton.
+Next: the walking skeleton — login + one database row + one API call, deployed.
+
+## Run it (dev)
+
+Backend (http://127.0.0.1:8000):
+
+    cd backend
+    python3 -m venv .venv
+    .venv/bin/pip install -r requirements.txt -r requirements-dev.txt
+    cp .env.example .env   # then fill in values
+    .venv/bin/uvicorn app.main:app --reload
+
+Frontend (http://localhost:5173, proxies /api and /auth to the backend):
+
+    cd frontend
+    npm install
+    npm run dev
 
 Locked so far:
 

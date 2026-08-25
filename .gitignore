@@ -1,6 +1,17 @@
 # OS noise
 .DS_Store
 
+# Python
+.venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+dist/
+
 # Secrets — a committed key is a compromised key.
 # Real values live in .env (local only); committed .env.example documents the shape.
 .env
