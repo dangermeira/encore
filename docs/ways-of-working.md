@@ -10,7 +10,9 @@ PLAN → BUILD → VERIFY → REVIEW → EXPLAIN → SHIP
 2. **Build** — small, explained increments. One new concept at a time.
 3. **Verify** — run it: a passing test, a live endpoint, a screenshot. Proof, not vibes.
 4. **Review** — `/code-review` on the diff before committing.
-5. **Explain** — Luan teach-backs what changed and why. Gaps go to `glossary.md`.
+5. **Explain** — after every commit, Claude first gives a high-level walkthrough:
+   what was added, why, and how it connects to the architecture. Then Luan
+   teach-backs it in their own words. Gaps go to `glossary.md`.
 6. **Ship** — branch → PR → Luan reviews the diff → merge. Docs ride the same commit.
 
 ## Git
