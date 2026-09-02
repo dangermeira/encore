@@ -17,6 +17,9 @@ artists/tracks, watch your taste change. Phase: v1 build (live by Oct 15, 2026).
   the same commit as the change.
 - After every commit: Claude gives a short architecture-level walkthrough (what
   was added, why, how it connects) before moving on.
+- One file at a time; plan before building it. OOP/DSA logic: Claude writes it.
+  API/DB/infra glue: Claude gives a skeleton, Luan writes the body (see
+  ways-of-working.md "Who writes what").
 - Check in before architectural decisions; push back on out-of-scope asks (the
   not-building list lives in development-plan.md).
 
