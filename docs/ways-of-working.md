@@ -47,5 +47,9 @@ Not yet familiar with infra/glue: API endpoints, database setup, auth wiring.
 - **OOP/DSA-shaped code** (algorithms, data structures, business logic): Claude
   writes it directly, explained.
 - **Infra/glue code** (a new route, a DB model, config wiring, the OAuth
-  handshake): Claude gives a skeleton — signatures, structure, `TODO` markers —
-  and Luan writes the body, guided.
+  handshake): Claude gives a skeleton — signatures, structure, `TODO` markers,
+  plus 1–2 lines of pseudocode at the tricky spots — and Luan writes the body,
+  guided.
+
+Plan weight scales to the file: one sentence for a trivial file, a real short
+plan (what/why/how it connects) for anything with real logic or a new concept.
