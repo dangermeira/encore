@@ -38,3 +38,4 @@ frontend) · GitHub Actions (CI + weekly snapshot cron).
 ## Rules
 `docs/` is canonical for project facts; update the relevant doc in the same
 commit as the change. v1 scope only — new ideas go to the not-list first.
+Code comments, PR descriptions, and doc updates: concise, no meta-commentary.
